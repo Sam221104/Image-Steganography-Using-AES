@@ -57,7 +57,6 @@ Least Significant Bit (LSB) steganography is a technique used to hide data withi
 * It is converted back into ciphertext and decrypted using AES, revealing the original message.
 
 ## Why Combine AES with LSB?
-<ul>
-  <li>✔ AES provides security (even if the image is accessed, the message remains encrypted).</li>
-  <li>✔ LSB ensures stealth (hidden data is imperceptible in the image).</li>
-</ul>
+>> AES provides security (even if the image is accessed, the message remains encrypted).</li>
+>> LSB ensures stealth (hidden data is imperceptible in the image).</li>
+
