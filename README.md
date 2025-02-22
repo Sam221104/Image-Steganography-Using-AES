@@ -40,9 +40,10 @@ Least Significant Bit (LSB) steganography is a technique used to hide data withi
 * The image looks the same because LSB changes only the least significant bits, which are imperceptible to the human eye.
   * AES + LSB = Security + Stealth
 <ul>
-  <li>✔ AES secures the data (making it unreadable without a key).</li>
-  <li>✔ LSB hides the encrypted data (so no one even suspects there’s a hidden message).</li>
+  <li>AES secures the data (making it unreadable without a key).</li>
+  <li>LSB hides the encrypted data (so no one even suspects there’s a hidden message).</li>
 </ul>
+
 ## How AES and LSB Work Together in Steganography
 ### AES Encryption
 * The secret message is encrypted using the AES-CBC (or AES-ECB) algorithm.
@@ -57,6 +58,67 @@ Least Significant Bit (LSB) steganography is a technique used to hide data withi
 * It is converted back into ciphertext and decrypted using AES, revealing the original message.
 
 ## Why Combine AES with LSB?
->> AES provides security (even if the image is accessed, the message remains encrypted).</li>
->> LSB ensures stealth (hidden data is imperceptible in the image).</li>
+* AES provides security (even if the image is accessed, the message remains encrypted).</li>
+* LSB ensures stealth (hidden data is imperceptible in the image).</li>
 
+## Installation
+1. Clone the Repository
+```git clone https://github.com/your-username/Image-Steganography-AES.git```
+```cd Image-Steganography-AES```
+2. Install Dependencies
+* Ensure Python is installed, then run:
+ ```pip install pillow pycryptodome tkinter```
+## Screenshots
+### Start Page
+![image](https://github.com/user-attachments/assets/dd762725-940e-434c-94be-11d62d5fa3cc)
+### Encryption Process
+__The secret message is: *This car looks ordinary, but inside lies a secret—hidden where no one would suspect. Can you uncover the truth?*__
+__The Passcode(Key) is given as: *DodgeChallenger*__
+![image](https://github.com/user-attachments/assets/7018e215-33d2-4e2b-9d62-1b634f0711c1)
+![image](https://github.com/user-attachments/assets/b7d71e9b-1298-41a9-8dca-28eca97849e9)
+__If any of the field is not given, it displays error.__
+![image](https://github.com/user-attachments/assets/7d4a7566-eebd-4234-8683-c71bf8021ff4)
+
+### Decryption Process
+__Loading the Encrypted Image and using the same passcode(key) for encryption, results in successful decrypting the message from the image and displays it__
+__The Passcode(Key) is given as: *DodgeChallenger*__
+![image](https://github.com/user-attachments/assets/6b84cd1d-9b55-4d6b-b21c-840f5df84cc5)
+__If passcode(key) mismatches with the encryption key__
+![image](https://github.com/user-attachments/assets/ad5a8718-1b12-4a3a-8ae4-4154f757f12f)
+__If any of the field is missing__
+![image](https://github.com/user-attachments/assets/2f790dfc-97e0-4765-ab60-205c308b4dcd)
+
+## Benefits of Using AES with LSB Steganography
+
+### **1️. Dual-Layer Security**
+- AES-CBC ensures the **message is encrypted** before being hidden, making it unreadable even if extracted.
+- LSB steganography provides **covert transmission**, preventing detection by attackers.
+
+### **2️. Enhanced Privacy & Confidentiality**
+- **No Suspicion:** Unlike normal encryption, where the presence of ciphertext is obvious, steganography keeps messages hidden in plain sight.
+- **Protected Key Generation:** SHA-256 is used to generate a strong encryption key from a password, **preventing brute-force attacks**.
+
+### **3️. Data Integrity & Authenticity**
+- AES encryption **ensures that data remains unaltered** during transmission.
+- Any modification to the image **can corrupt the hidden message**, alerting the receiver of tampering attempts.
+
+### **4️.  Universal Compatibility & Easy Sharing**
+- **Images appear normal**, allowing safe sharing on **social media, emails, and cloud storage**.
+- Base64 encoding helps in embedding encrypted data **without affecting image compatibility**.
+
+### **5️. Efficient & Lossless Retrieval**
+- The original hidden message **can be fully recovered** without degrading the cover image.
+- Unlike watermarking, **steganography preserves visual quality** while ensuring data secrecy.
+
+This **combination of cryptography and steganography** makes information security both **powerful and discreet**. 
+
+## Summary  
+
+This project combines **Advanced Encryption Standard (AES-CBC) encryption** with **Least Significant Bit (LSB) steganography** to securely hide messages within images.  
+
+- **AES-CBC Encryption:** Encrypts messages before embedding them to prevent unauthorized access.  
+- **LSB Steganography:** Hides encrypted data within image pixels, making the message undetectable.  
+- **SHA-256 Hashing:** Derives a strong encryption key from the user’s password.  
+- **Base64 Encoding:** Converts encrypted data into a text format suitable for embedding.  
+
+This **multi-layered security approach** ensures that even if someone extracts the hidden data, they **cannot read it without the correct key**. 
