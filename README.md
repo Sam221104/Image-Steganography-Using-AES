@@ -39,10 +39,8 @@ Least Significant Bit (LSB) steganography is a technique used to hide data withi
 * Even if someone accesses the image, they won’t notice that it contains hidden data.
 * The image looks the same because LSB changes only the least significant bits, which are imperceptible to the human eye.
   * AES + LSB = Security + Stealth
-<ul>
-  <li>AES secures the data (making it unreadable without a key).</li>
-  <li>LSB hides the encrypted data (so no one even suspects there’s a hidden message).</li>
-</ul>
+* AES secures the data (making it unreadable without a key).</li>
+* LSB hides the encrypted data (so no one even suspects there’s a hidden message).</li>
 
 ## How AES and LSB Work Together in Steganography
 ### AES Encryption
@@ -63,30 +61,47 @@ Least Significant Bit (LSB) steganography is a technique used to hide data withi
 
 ## Installation
 1. Clone the Repository
-```git clone https://github.com/your-username/Image-Steganography-AES.git```
-```cd Image-Steganography-AES```
-2. Install Dependencies
+```
+git clone https://github.com/your-username/Image-Steganography-AES.git
+```
+```
+cd Image-Steganography-AES
+```
+3. Install Dependencies
 * Ensure Python is installed, then run:
- ```pip install pillow pycryptodome tkinter```
-## Screenshots
-### Start Page
-![image](https://github.com/user-attachments/assets/dd762725-940e-434c-94be-11d62d5fa3cc)
-### Encryption Process
-__The secret message is: *This car looks ordinary, but inside lies a secret—hidden where no one would suspect. Can you uncover the truth?*__
-__The Passcode(Key) is given as: *DodgeChallenger*__
-![image](https://github.com/user-attachments/assets/7018e215-33d2-4e2b-9d62-1b634f0711c1)
-![image](https://github.com/user-attachments/assets/b7d71e9b-1298-41a9-8dca-28eca97849e9)
-__If any of the field is not given, it displays error.__
-![image](https://github.com/user-attachments/assets/7d4a7566-eebd-4234-8683-c71bf8021ff4)
+ ```
+pip install pillow pycryptodome tkinter
+```
+## Screenshots  
 
-### Decryption Process
-__Loading the Encrypted Image and using the same passcode(key) for encryption, results in successful decrypting the message from the image and displays it__
-__The Passcode(Key) is given as: *DodgeChallenger*__
-![image](https://github.com/user-attachments/assets/6b84cd1d-9b55-4d6b-b21c-840f5df84cc5)
-__If passcode(key) mismatches with the encryption key__
-![image](https://github.com/user-attachments/assets/ad5a8718-1b12-4a3a-8ae4-4154f757f12f)
-__If any of the field is missing__
-![image](https://github.com/user-attachments/assets/2f790dfc-97e0-4765-ab60-205c308b4dcd)
+### Start Page  
+<img src="https://github.com/user-attachments/assets/dd762725-940e-434c-94be-11d62d5fa3cc" width="500px">  
+
+### Encryption Process  
+__The secret message is: *This car looks ordinary, but inside lies a secret—hidden where no one would suspect. Can you uncover the truth?*__  
+__The Passcode(Key) is given as: *DodgeChallenger*__  
+
+<img src="https://github.com/user-attachments/assets/7018e215-33d2-4e2b-9d62-1b634f0711c1" width="500px">  
+<img src="https://github.com/user-attachments/assets/b7d71e9b-1298-41a9-8dca-28eca97849e9" width="500px">  
+
+__If any of the fields is not given, it displays an error.__  
+
+<img src="https://github.com/user-attachments/assets/7d4a7566-eebd-4234-8683-c71bf8021ff4" width="500px">  
+
+### Decryption Process  
+__Loading the Encrypted Image and using the same passcode(key) for encryption results in successfully decrypting the message from the image and displaying it.__  
+__The Passcode(Key) is given as: *DodgeChallenger*__  
+
+<img src="https://github.com/user-attachments/assets/6b84cd1d-9b55-4d6b-b21c-840f5df84cc5" width="500px">  
+
+__If passcode(key) mismatches with the encryption key__  
+
+<img src="https://github.com/user-attachments/assets/ad5a8718-1b12-4a3a-8ae4-4154f757f12f" width="500px">  
+
+__If any of the fields is missing__  
+
+<img src="https://github.com/user-attachments/assets/2f790dfc-97e0-4765-ab60-205c308b4dcd" width="500px">  
+
 
 ## Benefits of Using AES with LSB Steganography
 
