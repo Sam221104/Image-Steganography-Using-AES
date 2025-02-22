@@ -72,10 +72,10 @@ pip install pillow pycryptodome tkinter
 ```
 ## Screenshots  
 
-### Start Page  
+### <ins>Start Page</ins>  
 <img src="https://github.com/user-attachments/assets/dd762725-940e-434c-94be-11d62d5fa3cc" width="600px">  
 
-### Encryption Process  
+### <ins>Encryption Process</ins>  
 __➙ The secret message is: *This car looks ordinary, but inside lies a secret—hidden where no one would suspect. Can you uncover the truth?*__  
 __➙ The Passcode(Key) is given as: *DodgeChallenger*__  
 
@@ -86,7 +86,7 @@ __➙ If any of the fields is not given, it displays an error.__
 
 <img src="https://github.com/user-attachments/assets/7d4a7566-eebd-4234-8683-c71bf8021ff4" width="500px">  
 
-### Decryption Process  
+### <ins>Decryption Process</ins>  
 __➙ Loading the Encrypted Image and using the same passcode(key) for encryption results in successfully decrypting the message from the image and displaying it.__  
 __➙ The Passcode(Key) is given as: *DodgeChallenger*__  
 
